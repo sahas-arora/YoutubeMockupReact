@@ -13,7 +13,7 @@ const VideoList = (props) => {
   });
 
   return(
-    <div  className="ui relaxed divided list">
+    <div  className="ui relaxed divided list" style={{marginTop: "30px"}}>
       {individualVideos}
     </div>
   );

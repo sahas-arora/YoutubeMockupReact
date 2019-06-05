@@ -16,11 +16,11 @@ class VideoItem extends Component {
          onClick={() => {
           this.props.whenUserClicksOnVideo(this.props.video)
         }}>
-        <img className="ui image"
+        <img className="my-image"
            alt={this.props.video.snippet.description}
            src={this.props.video.snippet.thumbnails.medium.url} />
       <div className="content">
-        <div className="header">
+        <div className="my-header">
         {this.props.video.snippet.title}
       </div>
       </div>

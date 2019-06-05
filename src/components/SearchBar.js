@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react';
 
+import "./SearchBar.css";
+
 class SearchBar extends Component {
 
   constructor(props){
@@ -20,16 +22,18 @@ class SearchBar extends Component {
   render() {
     return(
       <div>
-        <form onSubmit={this.onFormSubmit} className="ui form">
-          <div className="field">
-          <label>Video Search</label>
-          <input
-            type="text"
-            onChange={(event) => {
-              this.setState({inputValue: event.target.value});
-            }}
-            value={this.state.inputValue}>
-            </input>
+        <form onSubmit={this.onFormSubmit} className="search-form">
+          <div className="search-field">
+            {/* <label className="search-label">Video Search</label> */}
+              <input
+                  placeholder="Search for a video"
+                  className="my-input"
+                  type="text"
+                  onChange={(event) => {
+                    this.setState({inputValue: event.target.value});
+                  }}
+                  value={this.state.inputValue}>
+                </input>
           </div>
         </form>
       </div>

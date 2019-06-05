@@ -1,0 +1,45 @@
+.header-row {
+    padding: 10px;
+    height: 90px;
+        background: rgb(220,220,220);
+
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    border-radius: 4px;
+    /* background: rgb(220,220,220); */
+  }
+  
+  .header-left {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .img-container {
+      width: 10%;
+  }
+
+  .my-img {
+      height: 100%;
+      width: 100%;
+  }
+  
+  .header-right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header-heading {
+    align-self: center;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  

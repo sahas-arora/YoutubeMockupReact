@@ -6,6 +6,24 @@ import youtube from '../api/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 
+import "./Navbar.css";
+
+let Navbar = () => {
+  return(
+    <div className="header-row header">
+        <div className="header-left">
+          <div className="img-container">
+          
+          <img className="my-img" src={require("../assets/images/logo.png")} alt="sf" />
+          </div>
+        </div>
+        <div className="header-right">
+          <div className="header-heading">Youtube Mockup</div>
+        </div>
+      </div>  
+  );
+}
+
 
 class App extends Component {
 
@@ -44,6 +62,9 @@ class App extends Component {
 
   render() {
     return(
+      <div>
+        <Navbar />
+        
       <div className="ui container" style={{marginTop: '20px'}}>
         <SearchBar runMeWhenUserHitsEnter={this.onSubmit}/>
         <div className="ui grid">
@@ -56,6 +77,7 @@ class App extends Component {
         </div>
         </div>
         </div>
+      </div>
       </div>
     );
   }
